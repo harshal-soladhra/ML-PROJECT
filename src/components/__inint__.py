@@ -1,0 +1,1 @@
+## componante ni andar artifacts rakhvanu 
