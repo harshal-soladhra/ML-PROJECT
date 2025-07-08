@@ -8,7 +8,7 @@ def error_message_detail(error, error_detail: sys):
     error_message = f"Error occurred in file '{file_name}' at line {line_number}: {str(error)}"
     return error_message
 
-class CustomExpection(Exception):
+class CustomException(Exception):  # ✅ Correct
     def __init__(self, error_message,error_detail: sys):
         super().__init__(error_message)
         self.error_message=error_message_detail(error_message,error_detail=error_detail)
